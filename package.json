@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "gulp"
+    "dev": "gulp"
   },
   "author": "",
   "license": "ISC",
@@ -12,5 +12,8 @@
     "browser-sync": "^2.26.14",
     "gulp": "^4.0.2",
     "sass": "^1.32.13"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta3"
   }
 }

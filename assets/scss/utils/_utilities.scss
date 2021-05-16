@@ -1,0 +1,9 @@
+.bg-home {
+    background-color: #b4bdcb;
+}
+
+@each $key, $value in $spacers {
+    .max-width-#{$key} {
+        max-width: $value;
+    }
+}

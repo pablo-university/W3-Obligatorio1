@@ -22,12 +22,16 @@ function scssCompiler(cb) {
     const result = sass.renderSync({
         file: "./assets/scss/index.scss",
         sourceMap: true,
-        outFile: "out/"
+        outFile: "index.css",
+        // outputStyle: "compressed"
     })
     // escribo el archivo con node nativo
     fs.writeFile('./assets/css/index.css', result.css.toString(), function (err) {
         if (err) throw err;
         console.log('>>>Sass guardado!');
+    });
+    fs.writeFile('./assets/css/index.css.map', result.map.toString(), function (err) {
+        if (err) throw err;
     });
     cb();
 }
