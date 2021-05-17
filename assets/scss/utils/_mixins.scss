@@ -1,0 +1,25 @@
+// MIN HEIGHT
+@mixin min-height($list) {
+    @each $value in $list {
+        .min-height-#{$value} {
+            min-height: #{$value};
+            @content;
+        }
+    }
+}
+
+// MEDIAS
+// xs: 0,
+// sm: 576px,
+// md: 768px,
+// lg: 992px,
+// xl: 1200px,
+// xxl: 1400px,
+// xxxl: 1800px
+// por ahora solo uso esta
+@mixin media-md {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+

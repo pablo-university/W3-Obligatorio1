@@ -1,9 +1,20 @@
+@use "../utils/variables" as *;
+@import "mixins";
+/* 
+!no puse usar @use creo q hay algun tema con bootstrap
+si intento usarlo desaparecen las variables de bootstrap quedan indefeinidas */
+
 .bg-home {
     background-color: #b4bdcb;
 }
 
+// MAX'S WIDHT
 @each $key, $value in $spacers {
     .max-width-#{$key} {
         max-width: $value;
     }
 }
+
+// MIN HEIGHT MIXIN
+@include min-height((1vh, 100vh));
+

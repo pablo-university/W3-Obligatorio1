@@ -1,3 +1,6 @@
+import "./nprogress.js";
+import "./hamburger.js";
+// import "./particle.js"
 
 function renderHeader(target) {
     const node = document.querySelector(target);
@@ -21,5 +24,3 @@ function renderHeader(target) {
 renderHeader('#nav');
 
 
-/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-// particlesJS.load('particles-js', '/assets/js/particles.json');
