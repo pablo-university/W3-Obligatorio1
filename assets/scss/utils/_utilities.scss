@@ -24,4 +24,4 @@ si intento usarlo desaparecen las variables de bootstrap quedan indefeinidas */
 
 
 // MIN HEIGHT MIXIN
-@include min-height((60vh, 100vh));
+@include min-height((60vh, 80vh, 100vh));

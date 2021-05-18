@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Science - Neuralink</title>
+    <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon">
+
+    <!-- bootstrap js cdn -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <!-- nprogresJS cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"></script>
+    <!-- nprogresCSS cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css" />
+    <!-- particle cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <!-- font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <!-- secondary font -->
+    <link href="https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <!-- js -->
+    <script defer src="./assets/js/index.js" type="module"></script>
+</head>
+
+<body class="science">
+
+    <!-- en conjunto con el nav se pone show, me prendo de el para hablarle al header -->
+    <input type="hidden" id="navbarNav">
+    <!-- absoluto para superar neuronas animadas y crear animacion mobil de menu -->
+    <header id="header" class="position-absolute top-0 w-100 pt-3"></header>
+
+    <main>
+        <!-- PORTADA -->
+        <section class="cover bg-science min-height-80vh d-flex flex-column pt-7">
+
+            <!-- Titulo principal -->
+            <hgroup class="container-md">
+                <h1 class="font-size-4rem fw-bold text-white max-width-7">Understanding
+                    the Brain</h1>
+                <hr class="bg-white">
+                <p class="text-white max-width-7">A web of communication that allows you to move, think, feel and sense.
+                </p>
+            </hgroup>
+
+            <!-- solo en portadas secundarias -->
+            <img class="w-50 m-auto d-md-none" src="/assets/img/science/science-mobile.png" alt="">
+
+            <footer class="container-md mt-auto pb-5">
+                <button type="button" class="btn btn-primary me-1 mb-1">JOIN THE TEAM</button>
+            </footer>
+        </section>
+
+        <section class="">
+            <p>aqui va la super imagen</p>
+            <img class="w-100 p-3 d-block d-md-none" src="assets/img/science/science-background-mobile.png" alt="">
+            <img class="w-100 p-3 d-none d-md-block" src="assets/img/science/science-background-desktop.svg" alt="">
+        </section>
+
+        <div id="footer"></div>
+    </main>
+
+    <!-- componente -->
+    <!-- <div id="nav" data='{"name":"pepe"}'></div> -->
+
+</body>
+
+</html>

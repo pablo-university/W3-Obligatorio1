@@ -1,0 +1,10 @@
+@import "./../utils/mixins";
+
+.science .cover {
+    @include media-md() {
+        background-image: url(/assets/img/science/science-desktop.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-x: 70%;
+    }
+}
