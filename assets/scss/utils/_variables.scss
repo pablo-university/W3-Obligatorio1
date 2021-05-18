@@ -1,5 +1,6 @@
 $enable-negative-margins: true;
 $font-family-base: 'Roboto', 'Helvetica', monospace;
+$font-family-secondary: 'Volkhov', serif;
 
 // COLORS
 $blue: #A7CEEF;
@@ -35,7 +36,7 @@ $grid-breakpoints: (
   lg: 992px,
   xl: 1200px,
   xxl: 1400px,
-  xxxl: 1800px
+  xxxl: 1950px
 );
 $container-max-widths: (
   sm: 540px,
@@ -43,5 +44,5 @@ $container-max-widths: (
   lg: 960px,
   xl: 1140px,
   xxl: 1320px,
-  xxxl: 1700px
+  xxxl: 1920px
 );

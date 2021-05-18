@@ -23,3 +23,17 @@
     }
 }
 
+// --- CREADOR DE REGLAS RESPONSIVAS ----
+@mixin responsive-rule($param) {
+    @each $key, $value in $grid-breakpoints {
+        .#{$key}\:#{$param} {
+            @media (min-width: $value) {
+                @content;
+            }
+        }
+    }
+}
+// ejemplo
+/* @include responsive-rule("display-grid") {
+    display: grid;
+} */

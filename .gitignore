@@ -1,3 +1,4 @@
-.recourses
+/.recourses
 package-lock.json
 node_modules
+/assets/img

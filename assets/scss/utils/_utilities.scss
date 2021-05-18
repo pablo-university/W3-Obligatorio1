@@ -4,8 +4,15 @@
 !no puse usar @use creo q hay algun tema con bootstrap
 si intento usarlo desaparecen las variables de bootstrap quedan indefeinidas */
 
-.bg-home {
-    background-color: #b4bdcb;
+.font-size-4rem {
+    font-size: min(4rem, 14vw);
+}
+
+// BACKGROUND'S (podria extender bootstrap)
+@each $key, $value in ("home": #b4bdcb, "science":$red, "approach":$blue, "aplications":$green, "about":$gold) {
+    .bg-#{$key} {
+        background-color: $value!important;
+    }
 }
 
 // MAX'S WIDHT
@@ -15,6 +22,6 @@ si intento usarlo desaparecen las variables de bootstrap quedan indefeinidas */
     }
 }
 
-// MIN HEIGHT MIXIN
-@include min-height((1vh, 100vh));
 
+// MIN HEIGHT MIXIN
+@include min-height((60vh, 100vh));

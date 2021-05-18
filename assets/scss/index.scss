@@ -16,13 +16,17 @@
 @import "components/nav-bar";
 @import "components/nprogress";
 @import "components/particle-js";
-@import "components/home";
 @import "components/hamburger";
 
 
 
 // utils -----------
 @import "utils/utilities";
+
+
+// views (pages)
+@import "views/general";
+@import "views/home";
 
 
 

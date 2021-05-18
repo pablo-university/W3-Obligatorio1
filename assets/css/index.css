@@ -627,9 +627,9 @@ progress {
     max-width: 1320px;
   }
 }
-@media (min-width: 1800px) {
+@media (min-width: 1950px) {
   .container-xxxl, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1700px;
+    max-width: 1920px;
   }
 }
 .row {
@@ -2223,7 +2223,7 @@ progress {
     --bs-gutter-y: 80rem;
   }
 }
-@media (min-width: 1800px) {
+@media (min-width: 1950px) {
   .col-xxxl {
     flex: 1 0 0%;
   }
@@ -2681,7 +2681,7 @@ progress {
     -webkit-overflow-scrolling: touch;
   }
 }
-@media (max-width: 1799.98px) {
+@media (max-width: 1949.98px) {
   .table-responsive-xxxl {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -4081,7 +4081,7 @@ textarea.form-control-lg {
     left: auto /* rtl:ignore */;
   }
 }
-@media (min-width: 1800px) {
+@media (min-width: 1950px) {
   .dropdown-menu-xxxl-start {
     --bs-position: start;
   }
@@ -4673,7 +4673,7 @@ textarea.form-control-lg {
     display: none;
   }
 }
-@media (min-width: 1800px) {
+@media (min-width: 1950px) {
   .navbar-expand-xxxl {
     flex-wrap: nowrap;
     justify-content: flex-start;
@@ -5549,7 +5549,7 @@ textarea.form-control-lg {
     border-left-width: 1px;
   }
 }
-@media (min-width: 1800px) {
+@media (min-width: 1950px) {
   .list-group-horizontal-xxxl {
     flex-direction: row;
   }
@@ -6071,7 +6071,7 @@ textarea.form-control-lg {
     border-radius: 0;
   }
 }
-@media (max-width: 1799.98px) {
+@media (max-width: 1949.98px) {
   .modal-fullscreen-xxxl-down {
     width: 100vw;
     max-width: none;
@@ -6814,7 +6814,7 @@ textarea.form-control-lg {
     z-index: 1020;
   }
 }
-@media (min-width: 1800px) {
+@media (min-width: 1950px) {
   .sticky-xxxl-top {
     position: sticky;
     top: 0;
@@ -15062,7 +15062,7 @@ textarea.form-control-lg {
     text-align: center !important;
   }
 }
-@media (min-width: 1800px) {
+@media (min-width: 1950px) {
   .float-xxxl-start {
     float: left !important;
   }
@@ -16391,6 +16391,9 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/* @include responsive-rule("display-grid") {
+    display: grid;
+} */
 @media (min-width: 768px) {
   .nav-item .nav-link.active::after {
     transform: scaleX(1);
@@ -16441,25 +16444,6 @@ canvas {
   height: 100%;
   background-size: cover;
   background-position: 50% 50%;
-}
-
-#navbarNav.show {
-  box-shadow: 1px 1px 0px 100vw #694949b8;
-  background: #694949b8;
-  transition: all 1s;
-}
-
-.home .cover {
-  background-image: url(/assets/img/home-mobile.png);
-  background-position: 85% center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-@media (min-width: 768px) {
-  .home .cover {
-    background-image: url(/assets/img/home-desktop.png);
-    background-size: auto;
-  }
 }
 
 /*!
@@ -17460,11 +17444,34 @@ canvas {
   background-color: #fff !important;
 }
 
+/* @include responsive-rule("display-grid") {
+    display: grid;
+} */
 /* 
 !no puse usar @use creo q hay algun tema con bootstrap
 si intento usarlo desaparecen las variables de bootstrap quedan indefeinidas */
+.font-size-4rem {
+  font-size: min(4rem, 14vw);
+}
+
 .bg-home {
-  background-color: #b4bdcb;
+  background-color: #b4bdcb !important;
+}
+
+.bg-science {
+  background-color: #C9A3A4 !important;
+}
+
+.bg-approach {
+  background-color: #A7CEEF !important;
+}
+
+.bg-aplications {
+  background-color: #ACB5AC !important;
+}
+
+.bg-about {
+  background-color: #D5B795 !important;
 }
 
 .max-width-0 {
@@ -17511,12 +17518,65 @@ si intento usarlo desaparecen las variables de bootstrap quedan indefeinidas */
   max-width: 80rem;
 }
 
-.min-height-1vh {
-  min-height: 1vh;
+.min-height-60vh {
+  min-height: 60vh;
 }
 
 .min-height-100vh {
   min-height: 100vh;
+}
+
+h2, .h2 {
+  font-family: "Volkhov", serif;
+}
+
+/* 
+- ya que el efecto de neurona esta por encima de las cosas para poder interactura
+debo posicionar elementos nav como boton y marca para que no se pierdan en ese efecto
+y ademas estar por encima de otras cosas que intentan estar por encima de esa animacion(ej boton JOIN THE TEAM).... */
+.navbar-brand, .navbar-brand + button {
+  position: relative;
+  z-index: 2;
+}
+
+#navbarNav.show {
+  box-shadow: 1px 1px 0px 100vh #181818b8;
+  background: #181818b8;
+  transition: all 1s;
+  z-index: 1;
+}
+
+/* @include responsive-rule("display-grid") {
+    display: grid;
+} */
+.home .cover {
+  background-image: url(/assets/img/home/home-mobile.png);
+  background-position: 85% center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .home .cover {
+    background-image: url(/assets/img/home/home-desktop.png);
+    background-size: auto;
+  }
+}
+
+.articles:hover {
+  transition: all 0.5s;
+}
+.articles:hover article {
+  filter: grayscale(1);
+  transition: all 0.5s;
+}
+.articles:hover article:hover {
+  filter: none;
+}
+
+.home .footer {
+  background-image: url(/assets/img/home/footer.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /*# sourceMappingURL=index.css.map */
