@@ -1,6 +1,6 @@
 import "./nprogress.js";
 import "./hamburger.js";
-// import "./particle.js"
+//import "./particle.js"
 
 function renderHeader(target) {
     const node = document.querySelector(target);

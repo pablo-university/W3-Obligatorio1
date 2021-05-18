@@ -36,12 +36,13 @@
 
     <!-- esto se posiciona por sobre todo para poder interactuar con el, 
         en consecunecia como hay menu botones etc en esta area, estos deben
-        SUPERAR este elemento por lo que debajo hay otros elementos posicionados -->
+        SUPERAR este elemento por lo que hay otros elementos posicionados (header(nav) y boton por ahora) -->
     <div id="particles-js"></div>
 
+    <!-- en conjunto con el nav se pone show, me prendo de el para hablarle al header -->
+    <input type="hidden" id="navbarNav">
     <!-- absoluto para superar neuronas animadas y crear animacion mobil de menu -->
     <header class="position-absolute top-0 w-100 pt-3">
-        <span id="navbarNav">|||||||||</span>
         <!-- NAVEGACIÓN ----------
             - container a nav para que mantenga una cierta caja -->
         <nav class="container-md navbar navbar-expand-md navbar-dark bg-transparent">
@@ -57,7 +58,7 @@
                             fill="var(--color-type-white)"></path>
                     </svg>
                 </a>
-                
+
                 <button class="navbar-toggler hamburger hamburger--emphatic text-white" type="button"
                     data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -68,12 +69,12 @@
 
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
 
-                    <!-- 
+                <!-- 
                     - margen auto start para llevarlo a la derecha
                     - direction column -->
-                    <ul class="navbar-nav ms-auto flex-column">
+                    <ul class="navbar-nav flex-column">
                         <li class="nav-item position-relative">
                             <a class="nav-link active" aria-current="page" href="#">SCIENCE</a>
                         </li>
@@ -94,7 +95,7 @@
                         </li>
                     </ul>
 
-                    <section class="d-md-none mt-auto mt-lg-5">
+                    <section class="d-md-none mt-lg-5 mt-5">
                         <!-- CONTACTO (tomado de contacto) -->
                         <address class="">
                             <p class="text-white-50 m-0 p-0">INFO</p>
@@ -237,17 +238,16 @@
 
             <!-- Titulo principal -->
             <hgroup class="container-md">
-                <h1 class="font-size-4rem fw-bold text-white max-width-8 pt-md-4">Create the
-                    Future with Us</h1>
+                <h2 class="text-white max-width-8 pt-md-4">Create the
+                    Future with Us</h2>
                 <hr class="bg-white">
-                <p class="max-width-8 text-white">Every day we’re building better tools for communicating with the
-                    brain. With the right team, the applications for this technology are limitless.</p>
+                <p class="max-width-8 text-white">Every day we’re building better tools for communicating with the brain. With the right team, the applications for this technology are limitless.</p>
             </hgroup>
 
             <!-- Footer del Header -->
             <!-- posicionado para superar las neuronas animadas -->
             <footer class="container-md mt-auto pb-5">
-                <button type="button" class="btn btn-primary">BOTON</button>
+                <button type="button" class="btn btn-primary">REACH OUT</button>
             </footer>
         </section>
 

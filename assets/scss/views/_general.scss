@@ -1,26 +1,18 @@
-h2{
+h2 {
     font-family: $font-family-secondary;
+    @extend .display-5;
 }
 
-// el header está absoluto
-/* 
-- ya que el efecto de neurona esta por encima de las cosas para poder interactura
-debo posicionar elementos nav como boton y marca para que no se pierdan en ese efecto
-y ademas estar por encima de otras cosas que intentan estar por encima de esa animacion(ej boton JOIN THE TEAM).... */
-.navbar-brand, .navbar-brand + button{
-    position: relative;
-    z-index: 2;
-}
-
-#navbarNav.show {
-    $color: #181818b8;
-    box-shadow: 1px 1px 0px 100vh $color;
-    background: $color;
+// el header está absoluto y pasa a ser fixed cuando es clickeado el menu de hamburguesa
+header{
     transition: all 1s;
+}
+input#navbarNav.show + header {
+    $color: #181818dc;
+    background-color: $color;
+    height: 100vh;
+    position: fixed!important;
+    top: 0;
+    left: 0;
     z-index: 1;
 }
-
-
-// aplicar estilos al nav ya que bueno es mi nav
-// es importante saber cuando el menu esta desplegado y
-//  tendra que saberlo el nav o como mucho un hijo,,,
