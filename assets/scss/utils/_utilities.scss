@@ -4,9 +4,11 @@
 !no puse usar @use creo q hay algun tema con bootstrap
 si intento usarlo desaparecen las variables de bootstrap quedan indefeinidas */
 
+// font size
 .font-size-4rem {
     font-size: min(4rem, 14vw);
 }
+
 
 // BACKGROUND'S (podria extender bootstrap)
 @each $key,
