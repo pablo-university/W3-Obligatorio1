@@ -1,0 +1,9 @@
+.approach .cover {
+    @include media-md() {
+        background-image: url(/assets/img/blue-desktop.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-x: 70%;
+        image-rendering: pixelated;
+    }
+}
