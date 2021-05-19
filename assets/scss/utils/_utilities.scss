@@ -9,9 +9,18 @@ si intento usarlo desaparecen las variables de bootstrap quedan indefeinidas */
 }
 
 // BACKGROUND'S (podria extender bootstrap)
-@each $key, $value in ("home": #b4bdcb, "science":$red, "approach":$blue, "aplications":$green, "about":$gold) {
+@each $key,
+    $value
+        in (
+            "home": #b4bdcb,
+            "science": $red,
+            "approach": $blue,
+            "aplications": $green,
+            "about": $gold
+        )
+{
     .bg-#{$key} {
-        background-color: $value!important;
+        background-color: $value !important;
     }
 }
 
@@ -22,6 +31,15 @@ si intento usarlo desaparecen las variables de bootstrap quedan indefeinidas */
     }
 }
 
-
 // MIN HEIGHT MIXIN
 @include min-height((60vh, 80vh, 100vh));
+
+// glass-effect for the card
+@include glass-effect;
+
+// z-index variables
+@include z-index-variables;
+
+// responsive rule ESTO ES SOLO UN EJEMPLO
+// propiedad| alias| mapa key value
+@include responsive-rule("background-color", "bg-color",("lavender": "tomato"));

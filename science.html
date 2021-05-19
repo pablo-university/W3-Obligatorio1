@@ -41,7 +41,7 @@
 
     <main>
         <!-- PORTADA -->
-        <section class="cover bg-science min-height-80vh d-flex flex-column pt-7">
+        <section class="cover bg-science min-height-80vh d-flex flex-column pt-6 pt-md-7">
 
             <!-- Titulo principal -->
             <hgroup class="container-md">
@@ -60,10 +60,61 @@
             </footer>
         </section>
 
-        <section class="">
-            <p>aqui va la super imagen</p>
-            <img class="w-100 p-3 d-block d-md-none" src="assets/img/science/science-background-mobile.png" alt="">
-            <img class="w-100 p-3 d-none d-md-block" src="assets/img/science/science-background-desktop.svg" alt="">
+        <!-- SECTION CARDS -->
+        <!-- 
+            - las posiciono con grid + gap, y ajusto detalles con margen a medida que va creciendo el vw 
+            - lo laburé mas que nada en mobil ~1366px y ~1920px
+        -->
+        <section class="container-xxl d-grid gap-7 py-3 position-relative">
+
+            <section>
+                <div class="card border-light glass-effect mt-md-6 mt-md-0" style="max-width: min(30rem, 100vw);">
+                    <div class="card-body">
+                        <hr class="m-0 mb-2">
+                        <h2 class="card-title">There Are 86 Billion
+                            Neurons in Your Brain</h2>
+                        <p class="card-text">Neurons send and receive information. Although neurons come in many different types, they generally have three parts: a dendrite which receives a signal, a cell body called a soma which computes the signal, and an axon which sends a signal out.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="card border-light glass-effect mt-5 mt-md-6 ms-md-auto" style="max-width: min(30rem, 100vw);">
+                    <div class="card-body">
+                        <hr class="m-0 mb-2">
+                        <h2 class="card-title">There Are 86 Billion
+                            Neurons in Your Brain</h2>
+                        <p class="card-text">The neurons of your brain connect to each other to send and receive signals through axon-dendrite connections called synapses.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="card border-light glass-effect mt-8 mt-md-6" style="max-width: min(30rem, 100vw);">
+                    <div class="card-body">
+                        <hr class="m-0 mb-2">
+                        <h2 class="card-title">Neurons Communicate
+                            Through Electric Signals</h2>
+                        <p class="card-text">Action potentials cause synapses to release neurotransmitters. These small molecules bind to receptors on dendrites, opening channels that cause current to flow across the neuron’s membrane. When a neuron receives the ‘right’ combination of spatiotemporal synaptic input, it initiates an action potential.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="card border-light glass-effect ms-md-auto" style="max-width: min(30rem, 100vw);">
+                    <div class="card-body">
+                        <hr class="m-0 mb-2">
+                        <h2 class="card-title">We Can Record Electrical
+                            Signals in the Brain</h2>
+                        <p class="card-text">We place electrodes near neurons in order to detect action potentials. Recording from many neurons allows us to decode the information represented by those cells. In the movement-related areas of the brain, for example, neurons represent intended movements. There are neurons in the brain that carry information about everything we see, feel, touch, or think.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- mobil -->
+            <img class="w-100 d-block d-md-none | mt-5 pt-7 px-sm-6 | position-absolute z-index-n1" src="assets/img/science/science-background-mobile.png" alt="image descriptive">
+            <!-- desktop -->
+            <img class="img-fluid d-none d-md-block position-absolute z-index-n1" src="assets/img/science/science-background-desktop.svg" alt="image descriptive">
         </section>
 
         <div id="footer"></div>

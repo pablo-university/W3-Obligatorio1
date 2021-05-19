@@ -1,17 +1,28 @@
+// ESTILOS GENERALES
+img{
+    image-rendering: pixelated;
+}
+hr:not([size]) {
+    height: 4px;
+    margin: 1.5rem 0;
+    border: 0;
+    opacity: .9;
+}
 h2 {
     font-family: $font-family-secondary;
     @extend .display-5;
+    // line-break: anywhere;
 }
 
 // el header está absoluto y pasa a ser fixed cuando es clickeado el menu de hamburguesa
-header{
+header {
     transition: all 1s;
 }
 input#navbarNav.show + header {
     $color: #181818dc;
     background-color: $color;
     height: 100vh;
-    position: fixed!important;
+    position: fixed !important;
     top: 0;
     left: 0;
     z-index: 1;

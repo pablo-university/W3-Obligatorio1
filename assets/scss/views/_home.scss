@@ -10,6 +10,7 @@
     @include media-md() {
         background-image: url(/assets/img/home/home-desktop.png);
         background-size: auto;
+        image-rendering: pixelated;
     }
 }
 
@@ -29,4 +30,5 @@
     background-image: url(/assets/img/home/footer.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    image-rendering: pixelated;
 }

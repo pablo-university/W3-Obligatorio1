@@ -4800,10 +4800,10 @@ textarea.form-control-lg {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: transparent;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  border: 1px solid none;
+  border-radius: 0;
 }
 .card > hr {
   margin-right: 0;
@@ -4815,13 +4815,13 @@ textarea.form-control-lg {
 }
 .card > .list-group:first-child {
   border-top-width: 0;
-  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px);
+  border-top-left-radius: none;
+  border-top-right-radius: none;
 }
 .card > .list-group:last-child {
   border-bottom-width: 0;
-  border-bottom-right-radius: calc(0.25rem - 1px);
-  border-bottom-left-radius: calc(0.25rem - 1px);
+  border-bottom-right-radius: none;
+  border-bottom-left-radius: none;
 }
 .card > .card-header + .list-group,
 .card > .list-group + .card-footer {
@@ -4857,19 +4857,19 @@ textarea.form-control-lg {
   padding: 1rem 2rem;
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.03);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  border-bottom: 1px solid none;
 }
 .card-header:first-child {
-  border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+  border-radius: none none 0 0;
 }
 
 .card-footer {
   padding: 1rem 2rem;
   background-color: rgba(0, 0, 0, 0.03);
-  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  border-top: 1px solid none;
 }
 .card-footer:last-child {
-  border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);
+  border-radius: 0 0 none none;
 }
 
 .card-header-tabs {
@@ -4877,6 +4877,10 @@ textarea.form-control-lg {
   margin-bottom: -1rem;
   margin-left: -1rem;
   border-bottom: 0;
+}
+.card-header-tabs .nav-link.active {
+  background-color: transparent;
+  border-bottom-color: transparent;
 }
 
 .card-header-pills {
@@ -4891,7 +4895,7 @@ textarea.form-control-lg {
   bottom: 0;
   left: 0;
   padding: 2rem;
-  border-radius: calc(0.25rem - 1px);
+  border-radius: none;
 }
 
 .card-img,
@@ -4902,14 +4906,14 @@ textarea.form-control-lg {
 
 .card-img,
 .card-img-top {
-  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px);
+  border-top-left-radius: none;
+  border-top-right-radius: none;
 }
 
 .card-img,
 .card-img-bottom {
-  border-bottom-right-radius: calc(0.25rem - 1px);
-  border-bottom-left-radius: calc(0.25rem - 1px);
+  border-bottom-right-radius: none;
+  border-bottom-left-radius: none;
 }
 
 .card-group > .card {
@@ -16391,9 +16395,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-/* @include responsive-rule("display-grid") {
-    display: grid;
-} */
 @media (min-width: 768px) {
   .nav-item .nav-link.active::after {
     transform: scaleX(1);
@@ -17466,9 +17467,6 @@ canvas {
   background: #bcb5ad;
 }
 
-/* @include responsive-rule("display-grid") {
-    display: grid;
-} */
 /* 
 !no puse usar @use creo q hay algun tema con bootstrap
 si intento usarlo desaparecen las variables de bootstrap quedan indefeinidas */
@@ -17552,6 +17550,89 @@ si intento usarlo desaparecen las variables de bootstrap quedan indefeinidas */
   min-height: 100vh;
 }
 
+.glass-effect {
+  background: #f9f9f900;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0.5rem 20rem rgba(0, 0, 0, 0.1);
+}
+
+.z-index-n1 {
+  z-index: -1;
+}
+
+.z-index-0 {
+  z-index: 0;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+.z-index-2 {
+  z-index: 2;
+}
+
+.z-index-3 {
+  z-index: 3;
+}
+
+.bg-color-lavender {
+  background-color: tomato;
+}
+
+@media (min-width: 0) {
+  .xs\:bg-color-lavender {
+    background-color: tomato;
+  }
+}
+
+@media (min-width: 576px) {
+  .sm\:bg-color-lavender {
+    background-color: tomato;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:bg-color-lavender {
+    background-color: tomato;
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:bg-color-lavender {
+    background-color: tomato;
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:bg-color-lavender {
+    background-color: tomato;
+  }
+}
+
+@media (min-width: 1400px) {
+  .xxl\:bg-color-lavender {
+    background-color: tomato;
+  }
+}
+
+@media (min-width: 1950px) {
+  .xxxl\:bg-color-lavender {
+    background-color: tomato;
+  }
+}
+
+img {
+  image-rendering: pixelated;
+}
+
+hr:not([size]) {
+  height: 4px;
+  margin: 1.5rem 0;
+  border: 0;
+  opacity: 0.9;
+}
+
 h2, .h2 {
   font-family: "Volkhov", serif;
 }
@@ -17569,9 +17650,6 @@ input#navbarNav.show + header {
   z-index: 1;
 }
 
-/* @include responsive-rule("display-grid") {
-    display: grid;
-} */
 .home .cover {
   background-image: url(/assets/img/home/home-mobile.png);
   background-position: 85% center;
@@ -17583,6 +17661,7 @@ input#navbarNav.show + header {
   .home .cover {
     background-image: url(/assets/img/home/home-desktop.png);
     background-size: auto;
+    image-rendering: pixelated;
   }
 }
 
@@ -17601,17 +17680,16 @@ input#navbarNav.show + header {
   background-image: url(/assets/img/home/footer.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  image-rendering: pixelated;
 }
 
-/* @include responsive-rule("display-grid") {
-    display: grid;
-} */
 @media (min-width: 768px) {
   .science .cover {
     background-image: url(/assets/img/science/science-desktop.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: 70%;
+    image-rendering: pixelated;
   }
 }
 
