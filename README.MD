@@ -1,2 +1,10 @@
 Anotar cosas aqui
-* simplificar imagenes repetidas?
+* anotar mis modulos
+
+* blockquote
+* navbar
+* buttons
+* modal pg science
+* acordion
+
+pd: al final quite el progress bar y use nprogresJS
