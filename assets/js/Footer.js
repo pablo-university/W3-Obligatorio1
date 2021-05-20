@@ -35,7 +35,7 @@ function renderHeader(target) {
 
                     <!-- CONTACTO -->
                     <address class="d-none d-md-block">
-                        <p class="link-secondary m-0 p-0">INFO</p>
+                        <p class="text-secondary m-0 p-0">INFO</p>
                         <a href="#" class="d-block text-decoration-none link-secondary">@NEURALINK.COM</a>
                         <a href="#" class="d-block text-decoration-none link-secondary">@NEURALINK</a>
                         <form action="">
