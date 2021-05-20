@@ -2,7 +2,7 @@
 
 .science .cover {
     @include media-md() {
-        background-image: url(/assets/img/science/science-desktop.png);
+        background-image: url(/assets/img/red-desktop.png);
         background-size: contain;
         background-repeat: no-repeat;
         background-position-x: 70%;
@@ -12,7 +12,7 @@
 
 
 .science .next-page{
-    background-image: url(/assets/img/science/blue-desktop-hero.png);
+    background-image: url(/assets/img/blue-desktop.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center right;

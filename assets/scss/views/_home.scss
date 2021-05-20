@@ -10,6 +10,7 @@
     @include media-md() {
         background-image: url(/assets/img/home/home-desktop.png);
         background-size: auto;
+        background-position-x: center;
         image-rendering: pixelated;
     }
 }
