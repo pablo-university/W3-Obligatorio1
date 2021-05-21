@@ -1,13 +1,16 @@
-Anotar cosas aqui
+## Notas
 * modulos
-
 * blockquote
 * navbar
 * buttons
 * modal pg science
 * acordion
 
-pd: al final quite el progress bar y use nprogresJS
+_pd: al final quite el progress bar y use nprogresJS_
 
-## otras notas
-* aveces sucede que no encuentra el menu de amburguesa el js como si se cargara antes el js o no se cargara el html...
+## Otras notas
+Aveces sucede que no encuentra el menu de amburguesa el js como si se cargara antes el js o no se cargara el html...
+
+```bash
+code here
+```
