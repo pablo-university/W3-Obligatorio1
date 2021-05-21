@@ -8,3 +8,5 @@ Anotar cosas aqui
 * acordion
 
 pd: al final quite el progress bar y use nprogresJS
+
+* #6f82a0 !important

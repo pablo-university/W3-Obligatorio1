@@ -7,11 +7,11 @@ const fs = require('fs');
 function serverBrowserSync(cb) {
     browserSync.init({
         server: {
-            baseDir: "./"
+            baseDir: "./src"
         }
     });
     // cuando estos archivos cambien recarga
-    watch(["./*.html", "./**/*.scss", "./**/*.js"]).on('change', browserSync.reload);
+    watch(["./**/*.html", "./**/*.scss", "./**/*.js"]).on('change', browserSync.reload);
 }
 
 
@@ -20,17 +20,17 @@ function scssCompiler(cb) {
     console.log('>>>tocaste el sass');
     // uso la api de sass o dart sass
     const result = sass.renderSync({
-        file: "./assets/scss/index.scss",
+        file: "./src/assets/scss/index.scss",
         sourceMap: true,
         outFile: "index.css",
         // outputStyle: "compressed"
     })
     // escribo el archivo con node nativo
-    fs.writeFile('./assets/css/index.css', result.css.toString(), function (err) {
+    fs.writeFile('./src/assets/css/index.css', result.css.toString(), function (err) {
         if (err) throw err;
         console.log('>>>Sass guardado!');
     });
-    fs.writeFile('./assets/css/index.css.map', result.map.toString(), function (err) {
+    fs.writeFile('./src/assets/css/index.css.map', result.map.toString(), function (err) {
         if (err) throw err;
     });
     cb();
@@ -44,7 +44,7 @@ exports.sass = series(scssCompiler);
 exports.default = function (cb) {
     // recarga de servidor
     serverBrowserSync();
-    // cuando el sass cambie compliamelo
+    // cuando el sass cambie compilamelo
     watch("./**/*.scss", scssCompiler);
 };
 
