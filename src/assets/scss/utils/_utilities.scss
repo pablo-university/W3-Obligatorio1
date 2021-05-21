@@ -14,7 +14,8 @@ si intento usarlo desaparecen las variables de bootstrap quedan indefeinidas */
 @each $key,
     $value
         in (
-            "home": #b4bdcb,
+            // "home": #b4bdcb,
+            "home": #8096af,
             "science": $red,
             "approach": $blue,
             "aplications": $green,

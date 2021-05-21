@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Home - Neuralink</title>
-    <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href=".//assets/img/favicon.png" type="image/x-icon">
 
     <!-- bootstrap js cdn -->
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
@@ -27,22 +27,25 @@
     <!-- css -->
     <link rel="stylesheet" href="./assets/css/index.css">
     <!-- js -->
-    <script defer src="./assets/js/index.js" type="module"></script>
+    <script defer async src="./assets/js/index.js" type="module"></script>
 
+    <!-- https://github.com/aFarkas/lazysizes -->
+    <script src="./assets/js/lazysizes.min.js" async=""></script>
 </head>
 
 <body class="home">
 
-    <!-- esto se posiciona por sobre todo para poder interactuar con el, 
-        en consecunecia como hay menu botones etc en esta area, estos deben
-        SUPERAR este elemento por lo que hay otros elementos posicionados (header(nav) y boton por ahora) -->
-    <div id="particles-js"></div>
-
+    
     <!-- en conjunto con el nav se pone show, me prendo de el para hablarle al header -->
     <input type="hidden" id="navbarNav">
     <!-- absoluto para superar neuronas animadas y crear animacion mobil de menu -->
     <header id="header" class="position-absolute top-0 w-100 pt-3"></header>
-
+    
+    <!-- esto se posiciona por sobre todo para poder interactuar con el, 
+        en consecunecia como hay menu botones etc en esta area, estos deben
+        SUPERAR este elemento por lo que hay otros elementos posicionados (header(nav) y boton por ahora) -->
+    <div id="particles-js"></div>
+    
     <main>
         <!-- PORTADA -->
         <section class="cover bg-home min-height-100vh d-flex flex-column pt-6 pt-md-7">
@@ -57,9 +60,9 @@
 
             <!-- Footer del Header -->
             <!-- posicionado para superar las neuronas animadas -->
-            <footer class="container-md position-relative mt-auto pb-5">
-                <button type="button" class="btn btn-primary me-1 mb-1">JOIN THE TEAM</button>
-                <button type="button" class="btn btn-outline-primary mb-1">WATCH THE UPDATE</button>
+            <footer class="container-md mt-auto pb-5">
+                <button type="button" class="btn btn-primary me-1 mb-1 position-relative">JOIN THE TEAM</button>
+                <button type="button" class="btn btn-outline-primary mb-1 position-relative">WATCH THE UPDATE</button>
             </footer>
         </section>
 
@@ -69,7 +72,7 @@
                 <div class="row row-cols-1 row-cols-md-3">
 
 
-                    <a href="#" class="text-decoration-none p-0" title="learn about science">
+                    <a href="./science.html" class="text-decoration-none p-0" title="learn about science">
                         <article class="bg-science h-100 p-4 pt-5">
                             <header>
                                 <!-- title -->
@@ -86,7 +89,7 @@
                             </header>
                             <!-- imagen -->
                             <div class="p-md-3 m-auto">
-                                <img class="w-100" src="assets/img/red-mobil.png" alt="">
+                                <img class="w-100" src="./assets/img/red-mobil.png" alt="">
                             </div>
                             <!-- footer -->
                             <footer>
@@ -95,7 +98,7 @@
                         </article>
                     </a>
 
-                    <a href="#" class="text-decoration-none p-0" title="learn about approach">
+                    <a href="./approach.html" class="text-decoration-none p-0" title="learn about approach">
                         <article class="bg-approach h-100 p-4 pt-5">
                             <header>
                                 <!-- title -->
@@ -112,7 +115,7 @@
                             </header>
                             <!-- imagen -->
                             <div class="p-md-3 m-auto">
-                                <img class="w-100" src="assets/img/blue-mobile.png" alt="">
+                                <img class="w-100" src="./assets/img/blue-mobile.png" alt="">
                             </div>
                             <!-- footer -->
                             <footer>
@@ -138,7 +141,7 @@
                             </header>
                             <!-- imagen -->
                             <div class="p-md-3 m-auto">
-                                <img class="w-100" src="assets/img/green-mobil.png" alt="">
+                                <img class="w-100" src="./assets/img/green-mobil.png" alt="">
                             </div>
                             <!-- footer -->
                             <footer>
