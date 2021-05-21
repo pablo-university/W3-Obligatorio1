@@ -3,6 +3,7 @@ var browserSync = require('browser-sync').create();
 const { series, src, dest, watch, gulp } = require('gulp');
 const sass = require('sass');
 const fs = require('fs');
+const env = require('gulp-env');
 
 function serverBrowserSync(cb) {
     browserSync.init({
@@ -18,13 +19,22 @@ function serverBrowserSync(cb) {
 // compilo mi sass
 function scssCompiler(cb) {
     console.log('>>>tocaste el sass');
-    // uso la api de sass o dart sass
-    const result = sass.renderSync({
+    
+    const config = {
         file: "./src/assets/scss/index.scss",
         sourceMap: true,
         outFile: "index.css",
-        // outputStyle: "compressed"
-    })
+        outputStyle: "compressed"
+    }
+
+    // check if production
+    if (process.env.NODE_ENV == 'production') {
+        config.outputStyle = "compressed"
+    }
+
+    // uso la api de sass o dart sass
+    const result = sass.renderSync(config)
+
     // escribo el archivo con node nativo
     fs.writeFile('./src/assets/css/index.css', result.css.toString(), function (err) {
         if (err) throw err;
@@ -47,6 +57,5 @@ exports.default = function (cb) {
     // cuando el sass cambie compilamelo
     watch("./**/*.scss", scssCompiler);
 };
-
 
 // https://www.youtube.com/watch?v=y9LlnLTH87U
