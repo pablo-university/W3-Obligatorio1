@@ -2,13 +2,13 @@
 
 // fondos de cover
 .home .cover {
-    background-image: url(/assets/img/home/home-mobile.png);
+    background-image: url('./../img/home/home-mobile.png');
     background-position: 85% center;
     background-size: contain;
     background-repeat: no-repeat;
     image-rendering: pixelated;
     @include media-md() {
-        background-image: url(/assets/img/home/home-desktop.png);
+        background-image: url('./../img/home/home-desktop.png');
         background-size: auto;
         background-position-x: center;
         image-rendering: pixelated;
@@ -31,7 +31,7 @@
 }
 
 .home .next-page{
-    background-image: url(/assets/img/home/footer.jpg);
+    background-image: url('./../img/home/footer.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     image-rendering: pixelated;

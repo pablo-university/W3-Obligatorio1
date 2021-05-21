@@ -1,5 +1,5 @@
 Anotar cosas aqui
-* anotar mis modulos
+* modulos
 
 * blockquote
 * navbar
@@ -9,4 +9,5 @@ Anotar cosas aqui
 
 pd: al final quite el progress bar y use nprogresJS
 
-* #6f82a0 !important
+## otras notas
+* aveces sucede que no encuentra el menu de amburguesa el js como si se cargara antes el js o no se cargara el html...
