@@ -1,4 +1,7 @@
-NProgress.configure({ easing: 'ease', speed: 500});//default is 200
+NProgress.configure({ 
+    easing: 'ease',
+    speed: 500
+    });//default is 200
 // agregar parent: 'h1' propiedad para cambiar la madre
 
 
