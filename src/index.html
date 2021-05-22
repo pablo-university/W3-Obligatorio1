@@ -20,7 +20,8 @@
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
     <!-- font -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <!-- secondary font -->
     <link href="https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&display=swap" rel="stylesheet">
 
@@ -35,17 +36,17 @@
 
 <body class="home">
 
-    
+
     <!-- en conjunto con el nav se pone show, me prendo de el para hablarle al header -->
     <input type="hidden" id="navbarNav">
     <!-- absoluto para superar neuronas animadas y crear animacion mobil de menu -->
     <header id="header" class="position-absolute top-0 w-100 pt-3"></header>
-    
+
     <!-- esto se posiciona por sobre todo para poder interactuar con el, 
         en consecunecia como hay menu botones etc en esta area, estos deben
         SUPERAR este elemento por lo que hay otros elementos posicionados (header(nav) y boton por ahora) -->
     <div id="particles-js"></div>
-    
+
     <main>
         <!-- PORTADA -->
         <section class="cover bg-home min-height-100vh d-flex flex-column pt-6 pt-md-7">
@@ -58,9 +59,13 @@
                 <hr class="bg-white">
             </header>
 
+            <!-- imagen en bloque para mobil -->
+            <img class="w-75 m-auto d-md-none my-n3 lazyload" data-src="./assets/img/home/home-mobile.png" alt="Understanding
+the Brain image">
+
             <!-- Footer del Header -->
             <!-- posicionado para superar las neuronas animadas -->
-            <footer class="container-md mt-auto pb-5">
+            <footer class="container-md mt-auto pb-md-5">
                 <button type="button" class="btn btn-primary me-1 mb-1 position-relative">JOIN THE TEAM</button>
                 <button type="button" class="btn btn-outline-primary mb-1 position-relative">WATCH THE UPDATE</button>
             </footer>
@@ -89,7 +94,8 @@
                             </header>
                             <!-- imagen -->
                             <div class="p-md-3 m-auto">
-                                <img class="w-100" src="./assets/img/red-mobil.png" alt="Understand with the Brain image">
+                                <img class="w-100" src="./assets/img/red-mobil.png"
+                                    alt="Understand with the Brain image">
                             </div>
                             <!-- footer -->
                             <footer>
@@ -115,7 +121,8 @@
                             </header>
                             <!-- imagen -->
                             <div class="p-md-3 m-auto">
-                                <img class="w-100" src="./assets/img/blue-mobile.png" alt="Interfacing with the Brain image">
+                                <img class="w-100" src="./assets/img/blue-mobile.png"
+                                    alt="Interfacing with the Brain image">
                             </div>
                             <!-- footer -->
                             <footer>
@@ -141,7 +148,8 @@
                             </header>
                             <!-- imagen -->
                             <div class="p-md-3 m-auto">
-                                <img class="w-100" src="./assets/img/green-mobil.png" alt="Engineering with the Brain image">
+                                <img class="w-100" src="./assets/img/green-mobil.png"
+                                    alt="Engineering with the Brain image">
                             </div>
                             <!-- footer -->
                             <footer>
@@ -156,22 +164,22 @@
 
         <!-- SECCION FINAL -->
         <section>
-                <article class="next-page bg-aplications min-height-80vh d-flex flex-column pt-5 py-md-6">
+            <article class="next-page bg-aplications min-height-80vh d-flex flex-column pt-5 py-md-6">
 
-                    <!-- Titulo principal -->
-                    <header class="container-md">
-                        <h2 class="text-white max-width-8">Create the
-                            Future with Us</h2>
-                        <hr class="bg-white">
-                        <p class="text-white max-width-8">
-                            Every day we’re building better tools for communicating with the
-                    brain. With the right team, the applications for this technology are limitless.</p>
-                    </header>
+                <!-- Titulo principal -->
+                <header class="container-md">
+                    <h2 class="text-white max-width-8">Create the
+                        Future with Us</h2>
+                    <hr class="bg-white">
+                    <p class="text-white max-width-8">
+                        Every day we’re building better tools for communicating with the
+                        brain. With the right team, the applications for this technology are limitless.</p>
+                </header>
 
-                    <footer class="container-md mt-auto pb-5">
-                        <a href="#" class="btn btn-primary me-1 mb-1">REACH OUT</a>
-                    </footer>
-                </article>
+                <footer class="container-md mt-auto pb-5">
+                    <a href="#" class="btn btn-primary me-1 mb-1">REACH OUT</a>
+                </footer>
+            </article>
         </section>
 
         <div id="footer"></div>
