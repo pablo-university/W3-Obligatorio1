@@ -13,7 +13,9 @@ hr:not([size]) {
     @extend .display-5;
     // line-break: anywhere;
 }
-
+body{
+        content-visibility: auto;
+}
 // el header está absoluto y pasa a ser fixed cuando es clickeado el menu de hamburguesa
 header {
     transition: all 1s;

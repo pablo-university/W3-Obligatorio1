@@ -29,8 +29,6 @@
     <!-- js -->
     <script defer async src="./assets/js/index.js" type="module"></script>
 
-    <!-- https://github.com/aFarkas/lazysizes -->
-    <script src="./assets/js/lazysizes.min.js" async=""></script>
 </head>
 
 <body class="approach">
@@ -54,7 +52,7 @@
             </header>
 
             <!-- solo en portadas secundarias -->
-            <img class="w-75 m-auto d-md-none" src="./assets/img/blue-mobile.png" alt="blue image in mobile">
+            <img loading="lazy" class="w-75 m-auto d-md-none" src="./assets/img/blue-mobile.png" alt="blue image in mobile">
 
             <footer class="container-md mt-auto pb-5">
                 <!-- <button type="button" class="btn btn-primary me-1 mb-1">JOIN THE TEAM</button> -->
@@ -81,7 +79,7 @@
                         contains many electrodes and connects them to an implant, the Link.</p>
                 </div>
                 <div>
-                    <img class="img-fluid" src="./assets/img/approach/approach-link-people.png" alt="approach link of people here!">
+                    <img loading="lazy" class="img-fluid" src="./assets/img/approach/approach-link-people.png" alt="approach link of people here!">
                 </div>
             </section>
         </section>
@@ -100,15 +98,15 @@
             <div class="row row-cols-md-2 g-3">
 
                 <div class="d-grid gap-3">
-                    <img class="img-fluid d-none d-md-block lazyload" data-src="./assets/img/approach/approach-link-1.png"
+                    <img loading="lazy" class="img-fluid d-none d-md-block" src="./assets/img/approach/approach-link-1.png"
                         alt="approach link chip">
-                    <img class="img-fluid lazyload" data-src="./assets/img/approach/approach-link-2.png" alt="approach-link">
+                    <img loading="lazy" class="img-fluid" src="./assets/img/approach/approach-link-2.png" alt="approach-link">
                 </div>
 
                 <ul class="d-grid">
 
                     <li class="d-flex align-items-center g-3">
-                        <div class="col-6"><img class="img-fluid" src="./assets/img/approach/pill_exploded.png"
+                        <div class="col-6"><img loading="lazy" class="img-fluid" src="./assets/img/approach/pill_exploded.png"
                                 alt="pill exploded image"></div>
                         <div>
                             <p class="fw-bold mb-0">LINK</p>
@@ -116,7 +114,7 @@
                         </div>
                     </li>
                     <li class="d-flex align-items-center g-3">
-                        <div class="col-6"><img class="img-fluid" src="./assets/img/approach/pill_hero.png"
+                        <div class="col-6"><img loading="lazy" class="img-fluid" src="./assets/img/approach/pill_hero.png"
                                 alt="pill hero"></div>
                         <div>
                             <p class="fw-bold mb-0">NEURAL THREADS</p>
@@ -124,7 +122,7 @@
                         </div>
                     </li>
                     <li class="d-flex align-items-center g-3">
-                        <div class="col-6"><img class="img-fluid" src="./assets/img/approach/charger_exploded.png"
+                        <div class="col-6"><img loading="lazy" class="img-fluid" src="./assets/img/approach/charger_exploded.png"
                                 alt="charger exploded"></div>
                         <div>
                             <p class="fw-bold mb-0">CHARGER</p>
@@ -161,7 +159,7 @@
             </section>
 
             <div class="container">
-                <img class="w-100 lazyload" data-src="./assets/img/approach/approach-surgery.png" alt="approach surgery here">
+                <img loading="lazy" class="w-100" src="./assets/img/approach/approach-surgery.png" alt="approach surgery here">
             </div>
 
         </section>
