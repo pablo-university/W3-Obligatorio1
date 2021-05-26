@@ -1,17 +1,20 @@
-## Notas
-* modulos
+## Modulos usados
 * blockquote
 * navbar
 * buttons
 * modal pg science
 * acordion
 
-_pd: al final quite el progress bar y use nprogresJS_
+## Material para corregir
+* [src](./src/) codigo del proyecto
+* [recursos](./.recourses) están los recursos entregables (planificación, modulos identificados etc)
 
 ## Otras notas
 Aveces sucede que no encuentra el menu de amburguesa el js como si se cargara antes el js o no se cargara el html...
+<hr>
+
 
 ```bash
-code here
+servidor local >>> npm run dev
 ```
 
