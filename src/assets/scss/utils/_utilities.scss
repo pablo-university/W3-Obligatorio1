@@ -46,3 +46,9 @@ si intento usarlo desaparecen las variables de bootstrap quedan indefeinidas */
 // responsive rule ESTO ES SOLO UN EJEMPLO
 // propiedad| alias| mapa key value
 @include responsive-rule("background-color", "bg-color",("lavender": "tomato"));
+
+// MEDIAS DE BOOTSTRAP
+// incluir este metodo donde esten los media-md que yo creé
+// @include media-breakpoint-up(md){
+    
+// };

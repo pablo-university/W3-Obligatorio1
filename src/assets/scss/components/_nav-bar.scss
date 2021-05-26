@@ -5,7 +5,7 @@
     @extend .p-0;
 
     // esto solo a partir de md
-    @include media-md() {
+    @include media-breakpoint-up(md) {
         &.active {
             &::after {
                 transform: scaleX(1);

@@ -1,38 +1,37 @@
 @import "./../utils/mixins";
 
-// fondos de cover
-.home .cover {
-    /* background-image: url('./../img/home/home-mobile.png');
-    background-position: 85% center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    image-rendering: pixelated; */
-    @include media-md() {
-        background-image: url('./../img/home/home-desktop.png');
-        background-size: auto;
-        background-position-x: center;
+.home {
+    h1{
+        user-select: none;
+    }
+    .cover {
+        @include media-breakpoint-up(md){
+    background-image: url("./../img/home/home-desktop.png");
+            background-size: auto;
+            background-position-x: center;
+            image-rendering: pixelated;
+        };
+    }
+
+    .articles {
+        articles {
+            transition: all 0.5s;
+        }
+        &:hover article {
+            filter: saturate(0);
+            transition: all 0.5s;
+        }
+        article:hover {
+            filter: none;
+            filter: saturate(1.4);
+            box-shadow: 0px 3rem 4rem 0px rgb(0 0 0 / 20%) !important;
+        }
+    }
+
+    .next-page {
+        background-image: url("./../img/home/footer.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
         image-rendering: pixelated;
     }
-}
-
- .articles {
-     articles {
-        transition: all .5s;
-     }
-     &:hover article{
-        filter: saturate(0);
-        transition: all .5s;
-     }
-    article:hover {
-        filter: none;
-        filter: saturate(1.4);
-        box-shadow: 0px 3rem 4rem 0px rgb(0 0 0 / 20%) !important;
-    }
-}
-
-.home .next-page{
-    background-image: url('./../img/home/footer.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    image-rendering: pixelated;
 }

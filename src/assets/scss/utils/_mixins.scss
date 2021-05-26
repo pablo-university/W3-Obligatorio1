@@ -17,11 +17,11 @@
 // xxl: 1400px,
 // xxxl: 1800px
 // por ahora solo uso esta
-@mixin media-md {
-    @media (min-width: 768px) {
-        @content;
-    }
-}
+// @mixin media-md {
+//     @media (min-width: 768px) {
+//         @content;
+//     }
+// }
 
 // --- CREADOR DE REGLAS RESPONSIVAS ----
 @mixin responsive-rule($prop, $alias, $map) {
