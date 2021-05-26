@@ -1,10 +1,11 @@
-// MIN HEIGHT
-@mixin min-height($list) {
-    @each $value in $list {
-        .min-height-#{$value} {
-            min-height: #{$value};
-            @content;
-        }
+
+// GLASS-EFFECT
+@mixin glass-effect {
+    .glass-effect {
+        background: #f9f9f900;
+        backdrop-filter: blur(4px);
+        box-shadow: 0 0.5rem 20rem rgb(0 0 0 / 10%);
+        @content;
     }
 }
 
@@ -16,26 +17,30 @@
 // xl: 1200px,
 // xxl: 1400px,
 // xxxl: 1800px
-// por ahora solo uso esta
-// @mixin media-md {
-//     @media (min-width: 768px) {
-//         @content;
-//     }
-// }
 
-// --- CREADOR DE REGLAS RESPONSIVAS ----
-@mixin responsive-rule($prop, $alias, $map) {
+/**
+* --- MI API ----
+* uso:
+* propiedad|alias|mapa key value|responsive?
+**/
+@mixin responsive-rule($prop, $alias, $map, $responsive: false) {
     // recorre el mapa enviado por parametro
     @each $name, $data in $map {
         // creo regla de uso normal
         .#{$alias}-#{$name} {
             #{$prop}: #{$data};
+            @content;
         }
-        // por cada mapa recorre y crea breakpoints
-        @each $key, $value in $grid-breakpoints {
-            .#{$key}\:#{$alias}-#{$name} {
-                @media (min-width: $value) {
-                    #{$prop}: #{$data};
+
+        // es responsive?
+        @if $responsive {
+            // por cada mapa recorre y crea breakpoints
+            @each $key, $value in $grid-breakpoints {
+                .#{$key}\:#{$alias}-#{$name} {
+                    @media (min-width: $value) {
+                        #{$prop}: #{$data};
+                        @content;
+                    }
                 }
             }
         }
@@ -43,21 +48,3 @@
 }
 // probe en sass meiter y funcioona ok....
 // @include responsive-rule("background-color","bg-color",("red": "blue"));
-
-// glass-effect
-@mixin glass-effect {
-    .glass-effect {
-        background: #f9f9f900;
-        backdrop-filter: blur(4px);
-        box-shadow: 0 0.5rem 20rem rgb(0 0 0 / 10%);
-        @content;
-    }
-}
-
-@mixin z-index-variables {
-    @each $key, $value in ("n1": -1, "0": 0, "1": 1, "2": 2, "3": 3) {
-        .z-index-#{$key} {
-            z-index: $value;
-        }
-    }
-}

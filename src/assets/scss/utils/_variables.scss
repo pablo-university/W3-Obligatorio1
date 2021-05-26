@@ -1,12 +1,14 @@
+
+
 $enable-negative-margins: true;
-$font-family-base: 'Montserrat', 'Helvetica', monospace;
-$font-family-secondary: 'Volkhov', serif;
+$font-family-base: "Montserrat", "Helvetica", monospace;
+$font-family-secondary: "Volkhov", serif;
 
 // COLORS
-$blue: #A7CEEF;
-$red: #C9A3A4;
+$blue: #a7ceef;
+$red: #c9a3a4;
 $green: #a4b9a4;
-$gold: #D5B795;
+$gold: #d5b795;
 
 // base #0B2436
 $primary: #2b465a;
@@ -15,37 +17,36 @@ $scroll-bar: #a59b91;
 // SPACCERS
 $spacer: 2rem;
 $spacers: (
-  0: 0,
-  1: $spacer / 4,
-  2: $spacer / 2,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
-
-  6: $spacer * 5,
-  7: $spacer * 10,
-  8: $spacer * 20,
-  9: $spacer * 30,
-  10: $spacer * 40,
+    0: 0,
+    1: $spacer / 4,
+    2: $spacer / 2,
+    3: $spacer,
+    4: $spacer * 1.5,
+    5: $spacer * 3,
+    6: $spacer * 5,
+    7: $spacer * 10,
+    8: $spacer * 20,
+    9: $spacer * 30,
+    10: $spacer * 40,
 );
 
 // BREAKPOINTS + CONTAINERS WID
 $grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1400px,
-  xxxl: 1950px
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,
+    xxxl: 1950px,
 );
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px,
-  xxl: 1320px,
-  xxxl: 1920px
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1320px,
+    xxxl: 1920px,
 );
 
 // BTN
@@ -54,7 +55,7 @@ $btn-border-radius: 0;
 // CUSTOM CARD
 $card-border-radius: 0;
 $card-border-color: none;
-$card-inner-border-radius:none;
+$card-inner-border-radius: none;
 $card-bg: transparent;
 
 // ACORDION CUSTOM
@@ -63,19 +64,8 @@ $accordion-button-active-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.
 // $accordion-padding-x:0rem;
 
 // MODAL
-$modal-sm:                          100vh;
-$modal-md:                          60vw;
+$modal-sm: 100vh;
+$modal-md: 60vw;
 // $modal-lg:                          70vw;
 
-// CUSTOM UTILITIES WITH API BOOTSTRAP
-$utilities : () !default;
-$utilities: map-merge((
-        "box-shadow": (
-            property: box-shadow,
-            class: shadow,
-            values: (
-                0: 0,
-                xl: 0px 3rem 4rem 0px rgb(0 0 0 / 20%),
-            )
-        )
-    ), $utilities);
+@import "./utilities-bootstrap";

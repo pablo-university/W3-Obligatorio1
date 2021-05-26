@@ -1,51 +1,29 @@
 @use "../utils/variables" as *;
 @import "mixins";
 
+// METODOS
+/* 
+- genero utilidades mediante bootstrap api o sino cuando la api 
+de bootstrap se pone difil para mergear propiedades existetes 
+las agrego mediante mi mixin
+*/
+
 // font size
 .font-size-4rem {
     font-size: min(4rem, 12vw);
 }
 
 
-// BACKGROUND'S (podria extender bootstrap)
-@each $key,
-    $value
-        in (
-            // "home": #b4bdcb,
-            "home": #8096af,
-            "science": $red,
-            "approach": $blue,
-            "aplications": $green,
-            "about": $gold
-        )
-{
-    .bg-#{$key} {
-        background-color: $value !important;
-    }
-}
-
-// MAX'S WIDHT
-@each $key, $value in $spacers {
-    .max-width-#{$key} {
-        max-width: $value;
-    }
-}
-
-// MIN HEIGHT MIXIN
-@include min-height((60vh, 80vh, 100vh));
-
 // glass-effect for the card
 @include glass-effect;
 
-// z-index variables
-@include z-index-variables;
 
-// responsive rule ESTO ES SOLO UN EJEMPLO
+// BG COLORS
 // propiedad| alias| mapa key value
-@include responsive-rule("background-color", "bg-color",("lavender": "tomato"));
-
-// MEDIAS DE BOOTSTRAP
-// incluir este metodo donde esten los media-md que yo creé
-// @include media-breakpoint-up(md){
-    
-// };
+@include responsive-rule("background-color", "bg",(
+    "home":#8096af,
+    "science": $red,
+    "approach": $blue,
+    "aplications": $green,
+    "about": $gold
+), false);

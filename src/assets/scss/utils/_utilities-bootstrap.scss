@@ -1,0 +1,56 @@
+// CUSTOM UTILITIES WITH API BOOTSTRAP
+$utilities: () !default;
+
+// shadows
+$utilities: map-merge(
+    (
+        "box-shadow": (
+            property: box-shadow,
+            class: shadow,
+            values: (
+                0: 0,
+                xl: 0px 3rem 4rem 0px rgb(0 0 0 / 20%),
+            ),
+        ),
+    ),
+    $utilities
+);
+// z-index
+$utilities: map-merge(
+    (
+        "z-index": (
+            property: z-index,
+            class: z-index,
+            values: (
+                "n1": -1,
+                "0": 0,
+                "1": 1,
+                "2": 2,
+                "3": 3,
+            ),
+        ),
+    ),
+    $utilities
+);
+// min-height
+$utilities: map-merge(
+    (
+        "min-height": (
+            property: min-height,
+            class: min-height,
+            values: 60vh 80vh 100vh 400vh,
+        ),
+    ),
+    $utilities
+);
+// max-width
+$utilities: map-merge(
+    (
+        "max-width": (
+            property: max-width,
+            class: max-width,
+            values:  $spacers,
+        ),
+    ),
+    $utilities
+);
