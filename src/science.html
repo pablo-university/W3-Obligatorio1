@@ -84,26 +84,26 @@
 
         <!-- SECTION CARDS -->
         <!-- 
-            - las posiciono con grid + gap, y ajusto detalles con margen a medida que va creciendo el vw 
+            - trabajo grid + gap, inicio laburando con margenes y luego quito margenes para agregar gap y acomodar con margenes
             - lo laburé mas que nada en mobil ~360, ~1366px y ~1920px
         -->
-        <section class="container-xxl d-grid gap-7 py-3 mt-3 mt-md-6 position-relative">
+        <section class="cards container-xxl d-grid gap-md-7 my-2  position-relative overflow-hidden">
 
             <section>
-                <div class="card border-light glass-effect mt-md-6 mt-md-0" style="max-width: min(30rem, 100vw);">
+                <div class="pt-5"></div>
+                <div class="card border-light glass-effect mx-auto mt-7 mt-md-7 ms-md-0" style="max-width: min(30rem, 100vw);">
                     <div class="card-body">
                         <hr class="m-0 mb-2">
                         <h2 class="card-title">There Are 86 Billion
                             Neurons in Your Brain</h2>
                         <p class="card-text">Neurons send and receive information. Although neurons come in many
-                            different types, they generally have three parts: a dendrite which receives a signal, a cell
-                            body called a soma which computes the signal, and an axon which sends a signal out.</p>
+                            different types, they generally have three parts: a dendrite which receives a signal.</p>
                     </div>
                 </div>
             </section>
 
             <section>
-                <div class="card border-light glass-effect mt-5 mt-md-6 ms-md-auto"
+                <div class="card border-light glass-effect mx-auto mt-6 m-md-0 ms-md-auto"
                     style="max-width: min(30rem, 100vw);">
                     <div class="card-body">
                         <hr class="m-0 mb-2">
@@ -116,21 +116,20 @@
             </section>
 
             <section>
-                <div class="card border-light glass-effect mt-8 mt-md-6" style="max-width: min(30rem, 100vw);">
+                <div class="card border-light glass-effect mx-auto mt-6 m-md-0" style="max-width: min(30rem, 100vw);">
                     <div class="card-body">
                         <hr class="m-0 mb-2">
                         <h2 class="card-title">Neurons Communicate
                             Through Electric Signals</h2>
                         <p class="card-text">Action potentials cause synapses to release neurotransmitters. These small
                             molecules bind to receptors on dendrites, opening channels that cause current to flow across
-                            the neuron’s membrane. When a neuron receives the ‘right’ combination of spatiotemporal
-                            synaptic input, it initiates an action potential.</p>
+                            the neuron’s membrane.</p>
                     </div>
                 </div>
             </section>
 
             <section>
-                <div class="card border-light glass-effect ms-md-auto" style="max-width: min(30rem, 100vw);">
+                <div class="card border-light glass-effect mx-auto mt-6 m-md-0 ms-md-auto" style="max-width: min(30rem, 100vw);">
                     <div class="card-body">
                         <hr class="m-0 mb-2">
                         <h2 class="card-title">We Can Record Electrical
@@ -138,18 +137,17 @@
                         <p class="card-text">We place electrodes near neurons in order to detect action potentials.
                             Recording from many neurons allows us to decode the information represented by those cells.
                             In the movement-related areas of the brain, for example, neurons represent intended
-                            movements. There are neurons in the brain that carry information about everything we see,
-                            feel, touch, or think.</p>
+                            movements.</p>
                     </div>
                 </div>
             </section>
 
             <!-- mobil -->
-            <img loading="lazy" class="w-100 d-block d-md-none | mt-5 pt-7 px-sm-6 | position-absolute z-index-n1"
-                src="./assets/img/science/science-background-mobile.png" alt="image descriptive and ilustration mobil">
+            <!-- <img loading="lazy" class="w-100  d-none | p-3  | position-absolute z-index-n1"
+                src="./assets/img/science/science-background-mobile.png" alt="image descriptive and ilustration mobil"> -->
             <!-- desktop -->
-            <img loading="lazy" class="img-fluid d-none d-md-block position-absolute z-index-n1"
-                src="./assets/img/science/science-background-desktop.svg"
+            <img loading="lazy" class="h-100 w-100 d-none d-md-block position-absolute z-index-n1"
+                src="./assets/img/science/science-background-desktopv2.svg"
                 alt="image descriptive and ilustration desktop">
         </section>
 

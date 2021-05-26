@@ -17697,6 +17697,17 @@ input#navbarNav.show + header {
     image-rendering: pixelated;
   }
 }
+.science .cards {
+  background-image: url("./../img/science/science-background-mobile.png");
+  background-size: 22rem;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+@media (min-width: 768px) {
+  .science .cards {
+    background-image: none;
+  }
+}
 .science .next-page {
   background-image: url("./../img/blue-desktop.png");
   background-size: contain;

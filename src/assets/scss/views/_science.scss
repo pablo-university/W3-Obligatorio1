@@ -11,6 +11,16 @@
         }
     }
 
+    .cards{
+        background-image: url("./../img/science/science-background-mobile.png");
+        background-size: 22rem;
+        background-repeat: no-repeat;
+        background-position: center top;
+        @include media-breakpoint-up(md) {
+            background-image: none;
+        }
+    }
+
     .next-page {
         background-image: url("./../img/blue-desktop.png");
         background-size: contain;
