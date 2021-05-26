@@ -41,7 +41,7 @@ function renderHeader(target) {
                         <form action="">
                             <div class="input-group my-3">
                                 <input type="text"
-                                    class="form-control bg-transparent border-0 border-bottom border-secondary rounded-0"
+                                    class="form-control bg-transparent border-0 border-bottom border-secondary rounded-0 text-white-50"
                                     placeholder="Enter email for updates" aria-label="Recipient's username"
                                     aria-describedby="button-addon2">
                                 <button class="btn" type="button" id="button-addon2" aria-label="Button for reach out">

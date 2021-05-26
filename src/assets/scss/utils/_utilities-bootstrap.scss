@@ -9,7 +9,8 @@ $utilities: map-merge(
             class: shadow,
             values: (
                 0: 0,
-                xl: 0px 3rem 4rem 0px rgb(0 0 0 / 20%),
+                xl: 0px 3rem 4rem rgb(0 0 0 / 20%),
+                xl-light: 0px 0rem 20rem rgb(0 0 0 / 10%),
             ),
         ),
     ),

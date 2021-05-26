@@ -13,8 +13,11 @@
 Aveces sucede que no encuentra el menu de amburguesa el js como si se cargara antes el js o no se cargara el html...
 <hr>
 
-
+## Iniciar
 ```bash
 servidor local >>> npm run dev
 ```
-
+o
+```bash
+algun otro servidor
+```
