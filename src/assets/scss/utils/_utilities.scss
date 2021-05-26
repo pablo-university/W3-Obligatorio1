@@ -1,8 +1,5 @@
 @use "../utils/variables" as *;
 @import "mixins";
-/* 
-!no puse usar @use creo q hay algun tema con bootstrap
-si intento usarlo desaparecen las variables de bootstrap quedan indefeinidas */
 
 // font size
 .font-size-4rem {
