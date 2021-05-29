@@ -1,8 +1,4 @@
-@import "./../utils/mixins";
 
-@import "../../../../node_modules/bootstrap/scss/functions";
-@import "../../../../node_modules/bootstrap/scss/variables";
-@import "../../../../node_modules/bootstrap/scss/utilities";
 
 .home {
     h1 {
@@ -34,9 +30,7 @@
     }
 
     .next-page {
-        background-image: url("./../img/home/footer.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
+        background: url(./../img/home/footer.jpg) center top / cover no-repeat;
         image-rendering: pixelated;
     }
 }

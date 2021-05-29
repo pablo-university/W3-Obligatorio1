@@ -13,11 +13,7 @@ hr:not([size]) {
     @extend .display-5;
     // line-break: anywhere;
 }
-main > section:not(:first-child) {
-    // teoricamente le baja la prioridad de render y varias cosas mas a elementos fuera de la ventana
-        // content-visibility: auto;
-        //me dio problemssssxxx
-}
+
 // el header está absoluto y pasa a ser fixed cuando es clickeado el menu de hamburguesa
 header {
     transition: all 1s;
