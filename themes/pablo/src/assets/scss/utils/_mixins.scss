@@ -1,0 +1,54 @@
+// GLASS-EFFECT
+@mixin glass-effect {
+    .glass-effect {
+        transition: box-shadow 0.5s ease-out;
+        background: #f9f9f900;
+        backdrop-filter: blur(4px);
+        // box-shadow: 0 0.5rem 20rem rgb(0 0 0 / 10%);
+        @extend .shadow-sm;
+        @content;
+        &:hover {
+            @extend .shadow-xl-light;
+        }
+    }
+}
+
+// MEDIAS
+// xs: 0,
+// sm: 576px,
+// md: 768px,
+// lg: 992px,
+// xl: 1200px,
+// xxl: 1400px,
+// xxxl: 1800px
+
+/**
+* --- MI API ----
+* uso:
+* propiedad|alias|mapa key value|responsive?
+**/
+@mixin responsive-rule($prop, $alias, $map, $responsive: false) {
+    // recorre el mapa enviado por parametro
+    @each $name, $data in $map {
+        // creo regla de uso normal
+        .#{$alias}-#{$name} {
+            #{$prop}: #{$data};
+            @content;
+        }
+
+        // es responsive?
+        @if $responsive {
+            // por cada mapa recorre y crea breakpoints
+            @each $key, $value in $grid-breakpoints {
+                .#{$key}\:#{$alias}-#{$name} {
+                    @media (min-width: $value) {
+                        #{$prop}: #{$data};
+                        @content;
+                    }
+                }
+            }
+        }
+    }
+}
+// probe en sass meiter y funcioona ok....
+// @include responsive-rule("background-color","bg-color",("red": "blue"));

@@ -1,0 +1,53 @@
+// ESTILOS GENERALES
+img {
+    image-rendering: pixelated;
+}
+hr:not([size]) {
+    height: 4px;
+    margin: 1.5rem 0;
+    border: 0;
+    opacity: 0.9;
+}
+* h2 {
+    font-family: $font-family-secondary;
+    @extend .display-5;
+    // line-break: anywhere;
+}
+
+// el header está absoluto y pasa a ser fixed cuando es clickeado el menu de hamburguesa
+header {
+    transition: all 1s;
+}
+input#navbarNav.show + header {
+    $color: #181818dc;
+    background-color: $color;
+    height: 100vh;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+// hover bg-green
+.hover\:bg-saturate {
+    filter: saturate(.5);
+    transition: all 0.5s;
+    &:hover {
+        filter: saturate(1);
+        transition: all 0.5s;
+    }
+}
+
+.articles {
+    articles {
+       transition: all .5s;
+    }
+    &:hover article{
+       filter: saturate(0);
+       transition: all .5s;
+    }
+   article:hover {
+       filter: none;
+       filter: saturate(1.4);
+   }
+}

@@ -1,0 +1,19 @@
+.approach {
+    .cover {
+        @include media-breakpoint-up(md) {
+            background-image: url("./../img/blue-desktop.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position-x: 70%;
+            image-rendering: pixelated;
+        }
+    }
+
+    .next-page {
+        background-image: url("./../img/green-mobil.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center right;
+        image-rendering: pixelated;
+    }
+}

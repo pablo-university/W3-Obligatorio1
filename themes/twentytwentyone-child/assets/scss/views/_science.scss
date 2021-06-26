@@ -1,0 +1,31 @@
+@import "./../utils/mixins";
+
+.science {
+    .cover {
+        @include media-breakpoint-up(md) {
+            background-image: url("./../img/red-desktop.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position-x: 70%;
+            image-rendering: pixelated;
+        }
+    }
+
+    .cards{
+        background-image: url("./../img/science/science-background-mobile.png");
+        background-size: 22rem;
+        background-repeat: no-repeat;
+        background-position: center top;
+        @include media-breakpoint-up(md) {
+            background-image: none;
+        }
+    }
+
+    .next-page {
+        background-image: url("./../img/blue-desktop.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center right;
+        image-rendering: pixelated;
+    }
+}

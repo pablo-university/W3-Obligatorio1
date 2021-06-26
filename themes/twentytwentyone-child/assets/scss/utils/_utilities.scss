@@ -1,0 +1,29 @@
+@use "../utils/variables" as *;
+@import "mixins";
+
+// METODOS
+/* 
+- genero utilidades mediante bootstrap api o sino cuando la api 
+de bootstrap se pone difil para mergear propiedades existetes 
+las agrego mediante mi mixin
+*/
+
+// font size
+.font-size-4rem {
+    font-size: min(4rem, 12vw);
+}
+
+
+// glass-effect for the card
+@include glass-effect;
+
+
+// BG COLORS
+// propiedad| alias| mapa key value
+@include responsive-rule("background-color", "bg",(
+    "home":#8096af,
+    "science": $red,
+    "approach": $blue,
+    "aplications": $green,
+    "about": $gold
+), false);

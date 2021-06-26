@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home - Neuralink</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+
+    <!-- bootstrap js cdn -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <!-- nprogresJS cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"></script>
+    <!-- nprogresCSS cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css" />
+    <!-- particle cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- secondary font -->
+    <link href="https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <!-- js -->
+    <script defer async src="./assets/js/index.js" type="module"></script>
+
+</head>
+
+<body class="home">
+
+
+    <!-- en conjunto con el nav se pone show, me prendo de el para hablarle al header -->
+    <input type="hidden" id="navbarNav">
+    <!-- absoluto para superar neuronas animadas y crear animacion mobil de menu -->
+    <header id="header" class="position-absolute top-0 w-100 pt-3"></header>
+
+    <!-- esto se posiciona por sobre todo para poder interactuar con el, 
+        en consecunecia como hay menu botones etc en esta area, estos deben
+        SUPERAR este elemento por lo que hay otros elementos posicionados (header(nav) y boton por ahora) -->
+    <div id="particles-js"></div>
+
+    <main>
+        <!-- PORTADA -->
+        <section class="cover bg-home min-height-100vh d-flex flex-column pt-6 pt-md-7">
+
+            <!-- Titulo principal -->
+            <header class="container-md">
+                <h1 class="font-size-4rem fw-bold text-white max-width-7">Breakthrough
+                    Technology
+                    for the Brain</h1>
+                <hr class="bg-white">
+            </header>
+
+            <!-- imagen en bloque para mobil -->
+            <img class="w-75 m-auto d-md-none my-n3" src="./assets/img/home/home-mobile.png" alt="Understanding
+the Brain image">
+
+            <!-- Footer del Header -->
+            <!-- posicionado para superar las neuronas animadas -->
+            <footer class="container-md mt-auto pb-3 pb-md-5">
+                <button type="button" class="btn btn-primary me-1 mb-1 position-relative">JOIN THE TEAM</button>
+                <button type="button" class="btn btn-outline-primary mb-1 position-relative">WATCH THE UPDATE</button>
+            </footer>
+        </section>
+
+        <!-- SECCION CARDS -->
+        <section class="bg-home articles">
+            <div class="container-fluid container-xxxl">
+                <div class="row row-cols-1 row-cols-lg-3">
+
+                    <a href="./science.html" class="text-decoration-none p-0" title="learn about science">
+                        <article class="bg-science h-100 p-4 pt-5">
+                            <header>
+                                <!-- title -->
+                                <h2 class="text-white">Understand with the Brain</h2>
+                                <!-- blockuote -->
+                                <figure class="text-end">
+                                    <blockquote class="blockquote">
+                                        <hr class="m-0 bg-white">
+                                    </blockquote>
+                                    <figcaption class="blockquote-footer text-white">
+                                        FIG. 1
+                                    </figcaption>
+                                </figure>
+                            </header>
+                            <!-- imagen -->
+                            <div class="p-md-3 m-auto">
+                                <img loading="lazy" class="w-100" src="./assets/img/red-mobil.png"
+                                    alt="Understand with the Brain image">
+                            </div>
+                        </article>
+                    </a>
+
+                    <a href="./approach.html" class="text-decoration-none p-0" title="learn about approach">
+                        <article class="bg-approach h-100 p-4 pt-5">
+                            <header>
+                                <!-- title -->
+                                <h2 class="text-white">Interfacing with the Brain</h2>
+                                <!-- blockuote -->
+                                <figure class="text-end">
+                                    <blockquote class="blockquote">
+                                        <hr class="m-0 bg-white">
+                                    </blockquote>
+                                    <figcaption class="blockquote-footer text-white">
+                                        FIG. 1
+                                    </figcaption>
+                                </figure>
+                            </header>
+                            <!-- imagen -->
+                            <div class="p-md-3 m-auto">
+                                <img loading="lazy" class="w-100" src="./assets/img/blue-mobile.png"
+                                    alt="Interfacing with the Brain image">
+                            </div>
+                        </article>
+                    </a>
+
+                    <a href="#" class="text-decoration-none p-0" title="learn about applications">
+                        <article class="bg-aplications h-100 p-4 pt-5">
+                            <header>
+                                <!-- title -->
+                                <h2 class="text-white">Engineering with the Brain</h2>
+                                <!-- blockuote -->
+                                <figure class="text-end">
+                                    <blockquote class="blockquote">
+                                        <hr class="m-0 bg-white">
+                                    </blockquote>
+                                    <figcaption class="blockquote-footer text-white">
+                                        FIG. 1
+                                    </figcaption>
+                                </figure>
+                            </header>
+                            <!-- imagen -->
+                            <div class="p-md-3 m-auto">
+                                <img loading="lazy" class="w-100" src="./assets/img/green-mobil.png"
+                                    alt="Engineering with the Brain image">
+                            </div>
+                        </article>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION FINAL -->
+        <section>
+            <article class="next-page bg-aplications min-height-80vh d-flex flex-column pt-6 py-md-6">
+
+                <!-- Titulo principal -->
+                <header class="container-md">
+                    <h2 class="text-white max-width-8">Create the
+                        Future with Us</h2>
+                    <hr class="bg-white">
+                    <p class="text-white max-width-8">
+                        Every day we’re building better tools for communicating with the
+                        brain. With the right team, the applications for this technology are limitless.</p>
+                </header>
+
+                <footer class="container-md mt-auto pb-5">
+                    <a href="#" class="btn btn-primary me-1 mb-1">REACH OUT</a>
+                </footer>
+            </article>
+        </section>
+
+        <div id="footer"></div>
+    </main>
+
+    <!-- componente example -->
+    <!-- <div id="nav" data='{"name":"pepe"}'></div> -->
+
+</body>
+
+</html>

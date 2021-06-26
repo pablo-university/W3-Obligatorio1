@@ -1,0 +1,41 @@
+
+
+.home {
+    h1 {
+        user-select: none;
+    }
+    .cover {
+        @include media-breakpoint-up(md) {
+            background-image: url("./../img/home/home-desktop.png");
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-position-x: center;
+            image-rendering: pixelated;
+        }
+    }
+
+    .articles {
+        article {
+            filter: saturate(1);
+            transition: all .5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+        }
+        &:hover article {
+            filter: saturate(0);
+            // transition: all 0.5s;
+        }
+        article:hover {
+            @extend .position-relative;
+            @extend .z-index-1;
+            filter: saturate(1.4);
+            // al final creé una sombra mas con la api de bootstrap (esta en variables)
+            @extend .shadow-xl;
+        }
+    }
+
+    .next-page {
+        background: url(./../img/home/footer.jpg) center top / cover no-repeat;
+        image-rendering: pixelated;
+    }
+}
+
+

@@ -1,0 +1,48 @@
+/*!
+Theme Name: twentytwentyone-child
+Theme URI: pablodelfante.com
+Version: 4.0
+Description: Tema hijo de twentytwentyone
+Author: Tu
+Author URI: pablodelfante.com
+Template: twentytwentyone
+*/
+
+
+// variables
+@use "./utils/variables" as *;
+
+
+
+
+// bootstrap
+@import "./../../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+
+
+
+// components --------
+@import "components/nav-bar";
+@import "components/nprogress";
+@import "components/particle-js";
+@import "components/hamburger";
+@import "components/scroll-bar";
+
+
+
+
+// utils -----------
+@import "utils/utilities";
+
+
+// views (pages)
+@import "views/general";
+@import "views/home";
+@import "views/science";
+@import "views/approach.scss";
+
+
+
+// custom wp
+@import "./custom-wp";

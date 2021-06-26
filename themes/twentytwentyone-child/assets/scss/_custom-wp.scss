@@ -1,0 +1,32 @@
+/* resset paddings and margins */
+body :is(.entry-content, .site-main) {
+    padding: 0;
+    margin: 0;
+}
+
+// solution problem with the menu walker
+// ---> i can with that manage the li tag
+.nav-item {
+    position: relative;
+}
+
+/* hidden entry header */
+.entry-header {
+    display: none;
+}
+
+// add padding in movile only
+main > div > div > section:first-of-type {
+    @extend .pt-6;
+    @extend .pt-md-0;
+}
+
+// repair h1 of elementor (it was not responsive)
+section h1 {
+    font-size: min(5rem, 16vw) !important;
+}
+
+// go over the styles of theme
+.btn-close{
+    background-color: transparent!important;
+}

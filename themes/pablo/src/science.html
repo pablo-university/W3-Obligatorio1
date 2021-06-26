@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Science - Neuralink</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+
+    <!-- bootstrap js cdn -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <!-- nprogresJS cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"></script>
+    <!-- nprogresCSS cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css" />
+    <!-- particle cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- secondary font -->
+    <link href="https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <!-- js -->
+    <script defer async src="./assets/js/index.js" type="module"></script>
+
+</head>
+
+<body class="science">
+
+    <!-- en conjunto con el nav se pone show, me prendo de el para hablarle al header -->
+    <input type="hidden" id="navbarNav">
+    <!-- absoluto para superar neuronas animadas y crear animacion mobil de menu -->
+    <header id="header" class="position-absolute top-0 w-100 pt-3"></header>
+
+    <main>
+        <!-- MODAL -->
+        <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabelx" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabelx">Understanding the Brain</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <!-- ratio ratio-16x9 -->
+                    <div class="modal-body ratio ratio-16x9">
+                        <iframe class="w-100" src="https://www.youtube.com/embed/rsCul1sp4hQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- PORTADA -->
+        <section class="cover bg-science min-height-80vh d-flex flex-column pt-6 pt-md-7">
+
+            <!-- Titulo principal -->
+            <hgroup class="container-md">
+                <h1 class="font-size-4rem fw-bold text-white max-width-7">Understanding
+                    the Brain</h1>
+                <hr class="bg-white">
+                <p class="text-white max-width-7">A web of communication that allows you to move, think, feel and sense.
+                </p>
+            </hgroup>
+
+            <!-- solo en portadas secundarias -->
+            <img loading="lazy" class="w-100 m-auto d-md-none" src="./assets/img/red-mobil.png" alt="Understanding
+            the Brain image">
+
+            <footer class="container-md mt-auto pb-5">
+                <button type="button" class="btn btn-primary me-1 mb-1" data-bs-toggle="modal"
+                    data-bs-target="#modal">
+                    PLAY VIDEO
+                </button>
+            </footer>
+        </section>
+
+        <!-- SECTION CARDS -->
+        <!-- 
+            - trabajo grid + gap, inicio laburando con margenes y luego quito margenes para agregar gap y acomodar con margenes
+            - lo laburé mas que nada en mobil ~360, ~1366px y ~1920px
+        -->
+        <section class="cards container-xxl d-grid gap-md-7 my-2  position-relative">
+
+            <section>
+                <div class="pt-5"></div>
+                <div class="card border-light glass-effect mx-auto mt-7 mt-md-7 ms-md-0" style="max-width: min(30rem, 100vw);">
+                    <div class="card-body">
+                        <hr class="m-0 mb-2">
+                        <h2 class="card-title">There Are 86 Billion
+                            Neurons in Your Brain</h2>
+                        <p class="card-text">Neurons send and receive information. Although neurons come in many
+                            different types, they generally have three parts: a dendrite which receives a signal.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="card border-light glass-effect mx-auto mt-6 m-md-0 ms-md-auto"
+                    style="max-width: min(30rem, 100vw);">
+                    <div class="card-body">
+                        <hr class="m-0 mb-2">
+                        <h2 class="card-title">There Are 86 Billion
+                            Neurons in Your Brain</h2>
+                        <p class="card-text">The neurons of your brain connect to each other to send and receive signals
+                            through axon-dendrite connections called synapses.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="card border-light glass-effect mx-auto mt-6 m-md-0" style="max-width: min(30rem, 100vw);">
+                    <div class="card-body">
+                        <hr class="m-0 mb-2">
+                        <h2 class="card-title">Neurons Communicate
+                            Through Electric Signals</h2>
+                        <p class="card-text">Action potentials cause synapses to release neurotransmitters. These small
+                            molecules bind to receptors on dendrites, opening channels that cause current to flow across
+                            the neuron’s membrane.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="card border-light glass-effect mx-auto mt-6 m-md-0 ms-md-auto" style="max-width: min(30rem, 100vw);">
+                    <div class="card-body">
+                        <hr class="m-0 mb-2">
+                        <h2 class="card-title">We Can Record Electrical
+                            Signals in the Brain</h2>
+                        <p class="card-text">We place electrodes near neurons in order to detect action potentials.
+                            Recording from many neurons allows us to decode the information represented by those cells.
+                            In the movement-related areas of the brain, for example, neurons represent intended
+                            movements.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- mobil -->
+            <!-- background with css -->
+            <!-- desktop -->
+            <img loading="lazy" class="h-100 w-100 d-none d-md-block position-absolute z-index-n1"
+                src="./assets/img/science/science-background-desktopv2.svg"
+                alt="image descriptive and ilustration desktop">
+        </section>
+
+        <!-- ACORDION -->
+        <section class="container py-1 py-md-6">
+            <hr>
+            <h2>Learn more</h2>
+
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            WHY DO ELECTRODES NEED TO BE CONNECTED DIRECTLY TO THE BRAIN?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Neural activity can be monitored from outside the head using
+                            non-invasive techniques such as EEG. With these techniques, each channel records the summed
+                            activity of millions of neurons, which means the details are blurred away. Imagine
+                            experiencing a sports event through a microphone placed outside the stadium. From the roars
+                            or groans of the crowd you can tell when something good or bad happens to the home team, but
+                            you'll have a hard time distinguishing whether they scored or made a great defensive play.
+                            And you certainly wouldn’t be able to hear what individual people were saying about the
+                            game. The same is true for recording from the brain: recordings made at a distance provide
+                            some useful, high-level information, but to access fine-scale information, you need to be
+                            close to the source. Here, that means recording action potentials, or voltage “spikes,” from
+                            individual neurons. Currently, that can only be done by placing electrodes inside the brain.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            HOW DOES NEURAL STIMULATION WORK?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">The code that electric currents activate muscles and nerves is
+                            almost as old as knowledge of electricity itself. When small currents are delivered through
+                            an electrode, the changing electric field drives nearby neurons to fire one or more action
+                            potentials. By stimulating in the right temporal sequences across many electrodes, it is
+                            possible to create patterns of activity that elicit a desired sensation, for example the
+                            feel of an object in the hand or a visual image. Stimulation can also reduce or eliminate
+                            the pathological patterns of activity that occur in neurological disorders, such as reducing
+                            movement deficits in Parkinson’s disease.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION FINAL -->
+        <section class="hover:bg-saturate">
+            <a href="./approach.html" class="text-decoration-none">
+                <article class="next-page bg-approach min-height-80vh d-flex flex-column pt-6 pt-md-7">
+
+                    <!-- Titulo principal -->
+                    <hgroup class="container-md">
+                        <h1 class="font-size-4rem fw-bold text-white max-width-7">Interfacing with the Brain</h1>
+                        <hr class="bg-white">
+                        <p class="text-white max-width-7">A web of communication that allows you to move, think, feel
+                            and
+                            sense.
+                        </p>
+                    </hgroup>
+
+                    <footer class="container-md mt-auto pb-5">
+                        <!-- <button type="button" class="btn btn-primary me-1 mb-1">JOIN THE TEAM</button> -->
+                    </footer>
+                </article>
+            </a>
+        </section>
+
+
+        <div id="footer"></div>
+    </main>
+
+    <!-- componente -->
+    <!-- <div id="nav" data='{"name":"pepe"}'></div> -->
+
+</body>
+
+</html>

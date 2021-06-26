@@ -1,0 +1,37 @@
+/*!
+Theme Name: Pablo
+Theme URI: ----
+Author: Pablo
+Author URI: ----
+Description: Tema para usar en tu entrega.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: Pablo
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+*/
+
+// variables
+@use "./utils/variables" as *;
+
+// bootstrap
+@import './../../../node_modules/bootstrap/scss/bootstrap.scss';
+
+// components --------
+@import 'components/nav-bar';
+@import 'components/nprogress';
+@import 'components/particle-js';
+@import 'components/hamburger';
+@import 'components/scroll-bar';
+
+// utils -----------
+@import 'utils/utilities';
+
+// views (pages)
+@import 'views/general';
+@import 'views/home';
+@import 'views/science';
+@import 'views/approach.scss';

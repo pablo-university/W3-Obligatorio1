@@ -1,0 +1,27 @@
+/*
+Theme Name: twentytwentyone-child
+Theme URI: http://loquesea.es
+Version: 4.0
+Description: Tema hijo de A theme
+Author: Tu
+Author URI: http://loquesea.es
+Template: twentytwentyone
+*/
+
+/*----------------- Cambios a partir de aquí -------------------------------*/
+@import "./assets/css/index.css";
+
+/* resset */
+body :is(.entry-content, .site-main) {
+    padding-top: 0;
+    margin-block-start: 0 !important;
+}
+
+.nav-item {
+    position: relative;
+}
+
+/* hidden entry header */
+.entry-header {
+    display: none;
+}
