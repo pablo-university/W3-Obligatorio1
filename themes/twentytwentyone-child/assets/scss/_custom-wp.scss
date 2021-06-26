@@ -27,6 +27,13 @@ section h1 {
 }
 
 // go over the styles of theme
-.btn-close{
-    background-color: transparent!important;
+.btn-close {
+    background-color: transparent !important;
+}
+
+// hidden nav and particles when elementor is active jaja
+.elementor-editor-active {
+    #header, #particles-js {
+        display: none;
+    }
 }
