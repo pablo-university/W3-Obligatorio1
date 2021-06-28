@@ -1,3 +1,11 @@
+// KILLING WORPRESS AND ELEMENTOR
+
+// change typo
+.elementor-widget-text-editor,
+.elementor-widget-heading .elementor-heading-title {
+    font-family: "Montserrat", "Helvetica", monospace !important;
+}
+
 /* resset paddings and margins */
 body :is(.entry-content, .site-main) {
     padding: 0;
@@ -22,8 +30,13 @@ main > div > div > section:first-of-type {
 }
 
 // repair h1 of elementor (it was not responsive)
-section h1 {
-    font-size: min(5rem, 16vw) !important;
+section {
+    h1 {
+        font-size: min(5rem, 16vw) !important;
+    }
+    h2 {
+        font-size: clamp(2rem, 3vw, 3rem)!important;
+    }
 }
 
 // go over the styles of theme
@@ -33,7 +46,13 @@ section h1 {
 
 // hidden nav and particles when elementor is active jaja
 .elementor-editor-active {
-    #header, #particles-js {
+    #header,
+    #particles-js {
         display: none;
     }
+}
+
+// hidden the particles in pages that isn't home
+body:not(.home) #particles-js {
+    display: none;
 }

@@ -8,5 +8,8 @@ _this branch content the theme child of twenty one theme only_
 * elementor posiciona todo es una pesadilla.....
 
 ### Problema
-* detecto que wp no me usa ni mi index ni front-page nada, incluso hice otro theme aparte pelado sin heredar nadita para probar la jerarquia y no me la usa nosé porque, incluso escribo pepe dentro del index ni pepe pinta estando solo index como requerido style y functions.php peleado, y si ni le coloco el loop de wp se la toma e imprime contenido como si nada, me ignora realmente =(
+No podía crear páginas como front-page.php
+
+### Solución?
+Probe en otra instal. y ok, al desactivar elementor todo volvia a la normalidad. Ya había hecho la pg con elementor pero bueno aprendi banda en el proceso. Si tuviera que hacerlo de nuevo usaria otra herramienta mas tipo Gutenberg...
 
