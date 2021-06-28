@@ -56,3 +56,11 @@ section {
 body:not(.home) #particles-js {
     display: none;
 }
+
+
+// custom footer menu colors on a tag
+footer ul li a{
+    @extend .text-white-50;
+    padding: .5rem !important;
+    font-family: "Montserrat", "Helvetica", monospace !important;
+}

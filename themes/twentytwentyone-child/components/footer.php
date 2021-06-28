@@ -9,16 +9,30 @@
 
 			<!-- SECCIONES -->
 			<div class="d-none d-md-block">
-				<ul class="list-unstyled ">
+				<!-- <ul class="list-unstyled ">
 					<li><a href="#" class="text-decoration-none link-secondary">SIENCE</a></li>
 					<li><a href="#" class="text-decoration-none link-secondary">APPROACH</a></li>
 					<li><a href="#" class="text-decoration-none link-secondary">APPLICATIONS</a></li>
 					<li><a href="#" class="text-decoration-none link-secondary">ABOUT US</a></li>
 					<li><a href="#" class="text-decoration-none link-secondary">CAREERS</a></li>
 					<li><a href="#" class="text-decoration-none link-secondary">BLOG</a></li>
-				</ul>
+				</ul> -->
 
-				
+				<?php if (has_nav_menu('primary')) : ?>
+					<nav id="site-navigation" class="primary-navigation" role="navigation" aria-label="<?php esc_attr_e('Primary menu', 'twentytwentyone'); ?>">
+						<?php
+						wp_nav_menu(
+							array(
+								'theme_location'  => 'primary',
+								'menu_class'      => 'menu-wrapper',
+								'container_class' => 'primary-menu-container',
+								'items_wrap'      => '<ul id="primary-menu-list" class="%2$s flex-column">%3$s</ul>',
+								'fallback_cb'     => false,
+							)
+						);
+						?>
+					</nav><!-- #site-navigation -->
+				<?php endif; ?>
 
 			</div>
 
