@@ -1,4 +1,9 @@
 <?php
+// custom content
+require_once __DIR__.'/components/custom-content.php';
+// Include custom navwalker
+require_once __DIR__.'/helpers/bs4navwalker.php';
+
 // hook para encolar estilos
 function my_theme_enqueue_styles()
 {
@@ -25,8 +30,7 @@ add_action('init', 'wpb_custom_new_menu');
 
 
 
-// Include custom navwalker
-require_once __DIR__.'/helpers/bs4navwalker.php';
+
 /** 
  * Colocar archivo php
  * requerirlo en functiones
